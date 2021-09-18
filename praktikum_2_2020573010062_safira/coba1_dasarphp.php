@@ -7,11 +7,8 @@
     <title>Syntax Dasar PHP - Safira</title>
 </head>
 <body>
-    <h1>
         <?php
-            echo "<a href='#'>Hello world</a>";
-            echo "<br> Tulisan kedua";
+            echo "Hello world";
         ?>
-    </h1>
 </body>
 </html>
