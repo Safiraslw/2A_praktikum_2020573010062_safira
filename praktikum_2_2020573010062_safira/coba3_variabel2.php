@@ -12,14 +12,14 @@
         $noRumah = 29;
         $blok = "4C";
         $jumlahPenghuni = 3;
-        echo "Hasil Variabel variabel jalan + variabel noRumah adalah ";
+        echo "Hasil Variabel variabel jalan + variabel noRumah adalah <br>";
         echo $alamat = $jalan . $noRumah;
         echo "<br>";
-        echo "Hasil Variabel variabel noRumah + variabel jumlahPenghuni adalah ";
+        echo "Hasil Variabel variabel noRumah + variabel jumlahPenghuni adalah <br>";
         echo $hasil = $noRumah + $jumlahPenghuni;
         echo "<br>";
-        echo "Hasil Variabel variabel blok + variabel noRumah adalah ";
-        echo $hasil = $blok + $noRumah;
+        echo "Hasil Variabel variabel blok + variabel noRumah adalah <br>";
+        echo $hasil = $blok . $noRumah;
         echo "<b>";
     ?>
 </body>
