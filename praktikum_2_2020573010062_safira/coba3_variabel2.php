@@ -19,7 +19,7 @@
         echo $hasil = $noRumah + $jumlahPenghuni;
         echo "<br>";
         echo "Hasil Variabel variabel blok + variabel noRumah adalah <br>";
-        echo $hasil = $blok . $noRumah;
+        echo $hasil = $blok + $noRumah;
         echo "<b>";
     ?>
 </body>
