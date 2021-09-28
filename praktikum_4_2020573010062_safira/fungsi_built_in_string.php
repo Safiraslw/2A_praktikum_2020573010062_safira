@@ -13,7 +13,7 @@
         echo "<br>";
         echo strtoupper($str); //ubah huruf ke besar semua
         echo "<br>";
-        echo str_replace ("Menyenangkan","mudah lho",$str); //mengganti string
+        echo str_replace ("menyenangkan","mudah lho",$str); //mengganti string
     ?>
 </body>
 </html>
