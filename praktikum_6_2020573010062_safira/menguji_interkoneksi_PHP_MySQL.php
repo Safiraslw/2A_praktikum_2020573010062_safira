@@ -7,13 +7,17 @@
     <title>Koneksi Database MySQL</title>
 </head>
 <body>
-    <?php
-        $conn=mysqli_connect("localhost", "root", "");
-        if($conn){
-            echo "Server terkoneksi";
-        } else {
-            echo "Server tidak terkoneksi";
-        }
-    ?>
+<?php
+$link = mysql_connect("localhost", "root", ""); 
+if (!$link) {
+die('Not connected : ' . mysql_error());
+}
+// make foo the current db
+$db_selected = mysql_select_db("foo", $link); 
+if (!$db_selected) {
+die ('Pemilihan database foo gagal : ' . mysql_error());
+}
+?>
+
 </body>
 </html>
