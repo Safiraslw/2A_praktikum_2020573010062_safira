@@ -28,13 +28,19 @@
                     <!-- Akhir Sidebar -->
                 </div>
                 <!-- Isi Konten -->
-                <div class="col-9">
-                    <div class="card">
-                        <h5 class="card-header" style="background-color:#ffc0cb;">BARANG</h5>
+                <div class="col-9 mt-3">
+                    <h4>Data Barang</h4>
+                    <hr>
+                    <div class="card mt-4">
+                        <h5 class="card-header" style="background-color:#ffc0cb;">Data Informasi Barang</h5>
                         <div class="card-body">
-                            <h5 class="card-title">DATA BARANG</h5>
+                            <a href="#" class="btn btn-dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi me-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+                                </svg>
+                                add more
+                            </a>
                             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-dark">Go somewhere</a>
                         </div>
                     </div>
                 </div>

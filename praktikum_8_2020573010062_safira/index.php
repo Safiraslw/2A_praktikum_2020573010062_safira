@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -10,6 +11,7 @@
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Sistem Informasi Peminjaman Barang Jurusan TIK</title>
 </head>
+
 <body>
     <div class="container-fluid">
         <!-- Header -->
@@ -27,15 +29,15 @@
                     <!-- Akhir Sidebar -->
                 </div>
                 <!-- Isi Konten -->
-                <div class="col-9">
-                    <div class="card">
-                        <h5 class="card-header" style="background-color:#ffc0cb;">HOME</h5>
-                        <div class="card-body">
-                            <h5 class="card-title">SISTEM INFORMASI PEMINJAMAN BARANG JURUSAN TIK</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-dark">Go somewhere</a>
-                        </div>
-                    </div>
+                <div class="col-9 mt-4">
+                    <h3 class="card-header" style="background-color:#ffc0cb;">Home</h3>
+                    <hr>
+                    <h5 class="card-title">
+                        SISTEM INFORMASI PEMINJAMAN BARANG JURUSAN TIK
+                        POLITEKNIK NEGERI LHOKSEUMAWE
+                    </h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="index.php" class="btn btn-dark">Go somewhere</a>
                 </div>
                 <!-- Akhir Isi Konten -->
             </div>
@@ -54,4 +56,5 @@
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
 </body>
+
 </html>
