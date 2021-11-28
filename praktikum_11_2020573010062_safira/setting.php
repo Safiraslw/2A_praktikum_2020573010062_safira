@@ -44,15 +44,17 @@ $data = mysqli_fetch_array($sql);
                             <form>
                                 <div class="mb-3">
                                     <label class="form-label">Email address</label>
-                                    <input type="email" class="form-control" aria-describedby="emailHelp" value="<?php 
+                                    <input type="email" class="form-control" aria-describedby="emailHelp" value="
+                                    <?php
                                     echo $data['Username']; ?>" disabled>
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label">Password</label>
-                                    <input type="password" class="form-control" aria-describedby="emailHelp" value="<?php 
+                                    <input type="password" class="form-control" aria-describedby="emailHelp" value="
+                                    <?php
                                     echo $data['Password']; ?>" disabled>
                                 </div>
-                                <a class="nav-link link-dark" href="form_change.php">Change Password</a>
+                                <a class="nav-link link-dark" href="form_change.php"><u><i>Change Password</i></u></a>
                             </form>
                         </div>
                     </div>

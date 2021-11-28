@@ -22,33 +22,33 @@ require "proses/session.php"
         require "change.php";
         ?>
         <!-- Akhir Header -->
-            <!-- Isi Konten -->
-            <div class="card mt-5 me-5 ms-5" style="height:250px">
-                <div class="card-header" align="center">
-                    Change Password
-                </div>
-                <form action="#" method="POST" name="form-ganti-password" enctype="multipart/form-data">
-                    <table width="40%" border="0" align="center" cellpadding="0" cellspacing="0">
-                        <tr height="50">
-                            <td>Current Password</td>
-                            <td><input type="password" name="Password_lama" id="Password_lama" size="30" maxlength="20"></td>
-                        </tr>
-                        <tr height="50">
-                            <td>New Password</td>
-                            <td><input type="password" name="Password_baru" id="Password_baru" size="30" maxlength="20"></td>
-                        </tr>
-                        <tr height="50">
-                            <td>Confirm New Password</td>
-                            <td><input type="password" name="Konf_password" id="Konf_password" size="30" maxlength="20"></td>
-                        </tr>
-                        <tr height="56">
-                            <td> </td>
-                            <td><input type="submit" name="Ganti" value="Change Password"></td>
-                        </tr>
-                    </table>
-                </form>
+        <!-- Isi Konten -->
+        <div class="card mt-5 me-5 ms-5" style="height:250px">
+            <div class="card-header" align="center">
+                Change Password
             </div>
-            <!-- Akhir Isi Konten -->
+            <form action="#" method="POST" name="form-ganti-password" enctype="multipart/form-data">
+                <table width="40%" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr height="50">
+                        <td>Current Password</td>
+                        <td><input type="password" name="Password_lama" id="Password_lama" size="30" maxlength="20"></td>
+                    </tr>
+                    <tr height="50">
+                        <td>New Password</td>
+                        <td><input type="password" name="Password_baru" id="Password_baru" size="30" maxlength="20"></td>
+                    </tr>
+                    <tr height="50">
+                        <td>Confirm New Password</td>
+                        <td><input type="password" name="Konf_password" id="Konf_password" size="30" maxlength="20"></td>
+                    </tr>
+                    <tr height="56">
+                        <td> </td>
+                        <td><input type="submit" name="Ganti" value="Change Password"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <!-- Akhir Isi Konten -->
     </div>
     </div>
     <!-- Optional JavaScript; choose one of the two! -->

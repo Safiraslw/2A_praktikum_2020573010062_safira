@@ -57,9 +57,7 @@ $select = mysqli_query($conn, "SELECT * FROM tb_barang");
                                     ?>
                                         <tr>
                                             <th scope="row"><?php echo $no ?></th>
-                                            <td><img src="..Images/barang/$hasil['Gambar']>" class="rounded mx-auto d-block" alt="">
-                                            <?php echo $hasil['Gambar'] . "<br>"; ?>
-                                            </td>
+                                            <td><?php echo $hasil['Gambar'] . "<br>"; ?></td>
                                             <td><?php echo $hasil['Nama'] . "<br>"; ?></td>
                                             <td><?php echo $hasil['Keterangan'] . "<br>"; ?></td>
                                             <td><button type="button" class="btn btn-danger">
