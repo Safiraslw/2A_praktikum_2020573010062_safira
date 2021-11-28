@@ -18,7 +18,7 @@
           <strong><?php echo $_SESSION['Username']; ?></strong>
         </a>
         <ul class="dropdown-menu text-small shadow" style="background-color:#ffc0cb;" aria-labelledby="dropdownUser2">
-          <li><a class="dropdown-item" href="#">Settings</a></li>
+          <li><a class="dropdown-item" href="setting">Settings</a></li>
           <li><a class="dropdown-item" href="profile">Profile</a></li>
           <li><hr class="dropdown-divider"></li>
           <li><a class="dropdown-item" href="proses/logout.php">Sign out</a></li>

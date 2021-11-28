@@ -11,6 +11,8 @@ if (empty ($_GET['s'])){
     require "barang.php";
 }elseif ($_GET['s'] == 'profile'){
     require "profile.php";
+}elseif ($_GET['s'] == 'setting'){
+    require "setting.php";
 }else {
     echo "<script> window.location='home';</script>";
 }
