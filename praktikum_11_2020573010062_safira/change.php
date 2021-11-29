@@ -12,7 +12,6 @@
     ?>
             <script>
                 alert('Password lama tidak sesuai!, silahkan ulang kembali!');
-                // document.location = 'change.php';
             </script>
     <?php
             session_destroy();
@@ -23,13 +22,13 @@
         }
         //validasi input konfirm password
         else if (($_POST['Password_baru']) != ($_POST['Konf_password'])) {
-            echo "<script>alert('Ganti Password Gagal! Password dan Konfirm Password Harus Sama')</script>";
+            echo "<script>alert('Ganti Password Gagal! Password dan Konfirm Password Harus Sama');</script>";
         } else {
             //update data
             $query = mysqli_query($conn, "UPDATE tb_user SET Password='$password_baru'");
             //setelah berhasil update
             if ($query) {
-                echo "<script>alert('Ganti Password Berhasil!')</script>";
+                echo "<script>alert('Ganti Password Berhasil!');</script>";
             } else {
                 echo "<script>alert('Ganti Password Gagal!')</script>";
             }

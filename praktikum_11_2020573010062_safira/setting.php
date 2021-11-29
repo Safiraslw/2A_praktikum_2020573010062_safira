@@ -54,7 +54,7 @@ $data = mysqli_fetch_array($sql);
                                     <?php
                                     echo $data['Password']; ?>" disabled>
                                 </div>
-                                <a class="nav-link link-dark" href="form_change.php"><u><i>Change Password</i></u></a>
+                                <a class="nav-link link-dark" href="change"><u><i>Change Password</i></u></a>
                             </form>
                         </div>
                     </div>

@@ -13,6 +13,8 @@ if (empty ($_GET['s'])){
     require "profile.php";
 }elseif ($_GET['s'] == 'setting'){
     require "setting.php";
+}elseif ($_GET['s'] == 'change'){
+    require "form_change.php";
 }else {
     echo "<script> window.location='home';</script>";
 }
