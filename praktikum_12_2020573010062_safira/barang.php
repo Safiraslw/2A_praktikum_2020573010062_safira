@@ -79,17 +79,65 @@ $select = mysqli_query($conn, "SELECT * FROM tb_barang");
                                                 </button>
                                             </td>
                                         </tr>
-                                    <?php
-                                    }
-                                    ?>
-                                </tbody>
-                            </table>
+                                        <!-- Modal Edit-->
+                                        <div class="modal fade" id="modaledit<?php echo $no ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit Data</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <form method="POST" action="proses/proses_edit_data_barang.php">
+                                                        <input type="hidden" name="id" value="<?php echo $hasil['id'] ?>">
+                                                        <div class="modal-body">
+                                                            <div class="mb-3">
+                                                                <label for="recipient-name" class="col-form-label">Nama Barang :</label>
+                                                                <input type="text" class="form-control" id="recipient-name" name="nm_barang" value="<?php echo $hasil['Nama']; ?>">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="recipient-name" class="col-form-label">Keterangan :</label>
+                                                                <input type="text" class="form-control" id="recipient-name" name="ket_barang" value="<?php echo $hasil['Keterangan'] ?>">
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                                                                <button type="submit" class="btn btn-primary">Simpan</button>
+                                                            </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
                         </div>
+                        <!-- Akhir Modal Edit -->
+                        <!-- Modal Delete-->
+                        <div class="modal fade" id="modaldelete<?php echo $no ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Delete</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Yakin ingin menghapus <?php echo $hasil['Nama']; ?> ?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                                        <button type="button" class="btn btn-primary">Simpan</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Akhir Modal Delete -->
+                    <?php
+                        } 
+                    ?>
+                    </tbody>
+                    </table>
                     </div>
                 </div>
-                <!-- Akhir Isi Konten -->
             </div>
+            <!-- Akhir Isi Konten -->
         </div>
+    </div>
     </div>
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
