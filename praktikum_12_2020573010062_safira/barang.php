@@ -65,7 +65,6 @@ $select = mysqli_query($conn, "SELECT * FROM tb_barang");
                                             <td><?php echo $hasil['Nama'] . "<br>"; ?></td>
                                             <td><?php echo $hasil['Keterangan'] . "<br>"; ?></td>
                                             <td>
-                                                </button>
                                                 <button data-bs-toggle="modal" data-bs-target="#modaledit<?php echo $no ?>" type="button" class="btn btn-warning">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
                                                         <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
@@ -107,26 +106,29 @@ $select = mysqli_query($conn, "SELECT * FROM tb_barang");
                                             </div>
                                         </div>
                         </div>
-                        <!-- Akhir Modal Edit -->
-                        <!-- Modal Delete-->
-                        <div class="modal fade" id="modaldelete<?php echo $no ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Delete</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        Yakin ingin menghapus <?php echo $hasil['Nama']; ?> ?
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-                                        <button type="button" class="btn btn-primary">Simpan</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Akhir Modal Delete -->
+                                        <!-- Akhir Modal Edit -->
+                                        <!-- Modal Delete-->
+                                        <div class="modal fade" id="modaldelete<?php echo $no ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Delete</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <form method="POST" action="proses/proses_hapus_data_barang.php">
+                                                        <input type="hidden" name="id" value="<?php echo $hasil['id'] ?>">
+                                                        <div class="modal-body">
+                                                            Yakin ingin menghapus <?php echo $hasil['Nama']; ?>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                                                            <button type="submit" class="btn btn-primary">Hapus</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Akhir Modal Delete -->
                     <?php
                         } 
                     ?>
