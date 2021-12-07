@@ -35,32 +35,35 @@ require "proses/session.php"
                     <h4>Data Peminjaman</h4>
                     <hr>
                     <div class="card mt-4">
-                        <div class="card-header" style="background-color:#ffc0cb;">
-                        <a href="formpinjam" class="btn btn-dark">Pinjam</a>
-                        </div>
+                        <h5 class="card-header" style="background-color:#ffc0cb;">Data User Peminjam</h5>
                         <div class="card-body">
-                            <table class="table table-striped table-hover">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Nama</th>
-                                        <th scope="col">Kelas</th>
-                                        <th scope="col">Dosen</th>
-                                        <th scope="col">Tanggal Peminjaman</th>
-                                        <th scope="col">Jam Kembali</th>
-                                        <th scope="col">Status</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                        <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                </tbody>
-                            </table>
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label">Nama</label>
+                                    <input type="text" class="form-control" id="nm-peminjam">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Kelas</label>
+                                    <input type="text" class="form-control" id="kelas">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Nama Barang</label>
+                                    <input type="text" class="form-control" id="nm_barang">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Dosen</label>
+                                    <input type="text" class="form-control" id="dosen">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Tanggal Peminjaman</label>
+                                    <input type="date" class="form-control" id="tgl_pinjam">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Status</label>
+                                    <input type="text" class="form-control" id="status_pinjam">
+                                </div>
+                            </form>
+                            <a href="peminjaman" class="btn btn-dark">Pinjam</a>
                         </div>
                     </div>
                 </div>

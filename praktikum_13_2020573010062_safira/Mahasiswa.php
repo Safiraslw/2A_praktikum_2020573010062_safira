@@ -1,5 +1,5 @@
 <?php
-require "proses/session.php"
+    require "proses/session.php"
 ?>
 <!doctype html>
 <html lang="en">
@@ -32,35 +32,17 @@ require "proses/session.php"
                 </div>
                 <!-- Isi Konten -->
                 <div class="col-9 mt-3">
-                    <h4>Data Peminjaman</h4>
+                    <h4>Data Mahasiswa</h4>
                     <hr>
                     <div class="card mt-4">
-                        <div class="card-header" style="background-color:#ffc0cb;">
-                        <a href="formpinjam" class="btn btn-dark">Pinjam</a>
-                        </div>
+                        <h5 class="card-header" style="background-color:#ffc0cb;">Data Informasi Mahasiswa</h5>
                         <div class="card-body">
-                            <table class="table table-striped table-hover">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Nama</th>
-                                        <th scope="col">Kelas</th>
-                                        <th scope="col">Dosen</th>
-                                        <th scope="col">Tanggal Peminjaman</th>
-                                        <th scope="col">Jam Kembali</th>
-                                        <th scope="col">Status</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                        <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                </tbody>
-                            </table>
+                            <a href="#" class="btn btn-dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi me-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+                                </svg>
+                                add more
+                            </a>
                         </div>
                     </div>
                 </div>
