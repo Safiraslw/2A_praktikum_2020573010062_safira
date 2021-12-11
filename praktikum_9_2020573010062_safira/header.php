@@ -6,7 +6,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+      <ul class="navbar-nav me-auto mb-auto mb-lg-0"></ul>
       <form class="d-flex">
         <input class="form-control me-2 navbar-light" type="search" style="background-color:#ffc0cb;" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-light" type="submit">Search</button>

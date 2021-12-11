@@ -15,8 +15,6 @@ if (empty ($_GET['s'])){
     require "setting.php";
 }elseif ($_GET['s'] == 'change'){
     require "form_change.php";
-}elseif ($_GET['s'] == 'formpinjam'){
-    require "form_peminjaman.php";
 }else {
     echo "<script> window.location='home';</script>";
 }
