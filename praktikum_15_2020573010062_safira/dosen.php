@@ -1,6 +1,6 @@
 <?php
 require "proses/session.php";
-$select = mysqli_query($conn, "SELECT * FROM tb_barang");
+$select = mysqli_query($conn, "SELECT * FROM tb_dosen");
 // $query = mysqli_fetch_array($select);
 ?>
 <!doctype html>
@@ -34,24 +34,24 @@ $select = mysqli_query($conn, "SELECT * FROM tb_barang");
                     <!-- Akhir Sidebar -->
                 </div>
                 <!-- Isi Konten -->
-
                 <div class="col-9 mt-3">
-                    <h4>Data Barang</h4>
+                    <h4>Data Dosen</h4>
                     <hr>
                     <div class="card mt-4">
-                        <h5 class="card-header" style="background-color:#ffc0cb;">Data Informasi Barang</h5>
+                        <h5 class="card-header" style="background-color:#ffc0cb;">Data Informasi Dosen</h5>
                         <div class="card-body">
-                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#tambahdatabarang">
-                                Tambah Data Barang
+                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#tambahdatadosen">
+                                Tambah Data Dosen
                             </button>
                             <table class="table table-striped table-hover">
                                 <thead>
                                     <tr>
                                         <th scope="col">No</th>
-                                        <th scope="col">Gambar</th>
+                                        <th scope="col">NIP</th>
                                         <th scope="col">Nama</th>
-                                        <th scope="col">Keterangan</th>
-                                        <th scope="col">Stok</th>
+                                        <th scope="col">Prodi</th>
+                                        <th scope="col">Alamat</th>
+                                        <th scope="col">Tgl Lahir</th>
                                         <th scope="col">Aksi</th>
                                     </tr>
                                 </thead>
@@ -63,12 +63,11 @@ $select = mysqli_query($conn, "SELECT * FROM tb_barang");
                                     ?>
                                         <tr>
                                             <th scope="row"><?php echo $no ?></th>
-                                            <td>
-                                                <?php echo "<img src='Images/Barang/$hasil[Gambar]' width='70' height='50'>"; ?>
-                                            </td>
+                                            <td><?php echo $hasil['NIP'] . "<br>"; ?></td>
                                             <td><?php echo $hasil['Nama'] . "<br>"; ?></td>
-                                            <td><?php echo $hasil['Keterangan'] . "<br>"; ?></td>
-                                            <td><?php echo $hasil['Stok'] . "<br>"; ?></td>
+                                            <td><?php echo $hasil['Prodi'] . "<br>"; ?></td>
+                                            <td><?php echo $hasil['Alamat'] . "<br>"; ?></td>
+                                            <td><?php echo $hasil['Tanggal_Lahir'] . "<br>"; ?></td>
                                             <td>
                                                 <button data-bs-toggle="modal" data-bs-target="#modaledit<?php echo $no ?>" type="button" class="btn btn-warning">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
@@ -91,16 +90,20 @@ $select = mysqli_query($conn, "SELECT * FROM tb_barang");
                                                         <h5 class="modal-title" id="exampleModalLabel">Edit Data</h5>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                     </div>
-                                                    <form method="POST" action="proses/proses_edit_data_barang.php">
-                                                        <input type="hidden" name="id" value="<?php echo $hasil['Kode_barang'] ?>">
+                                                    <form method="POST" action="proses/proses_edit_data_dosen.php">
+                                                        <input type="hidden" name="nip" value="<?php echo $hasil['NIP'] ?>">
                                                         <div class="modal-body">
                                                             <div class="mb-3">
-                                                                <label for="recipient-name" class="col-form-label">Nama Barang :</label>
-                                                                <input type="text" class="form-control" id="recipient-name" name="nm_barang" value="<?php echo $hasil['Nama']; ?>">
+                                                                <label for="recipient-name" class="col-form-label">Nama :</label>
+                                                                <input type="text" class="form-control" id="recipient-name" name="nm_dosen" value="<?php echo $hasil['Nama']; ?>">
                                                             </div>
                                                             <div class="mb-3">
-                                                                <label for="recipient-name" class="col-form-label">Keterangan :</label>
-                                                                <input type="text" class="form-control" id="recipient-name" name="ket_barang" value="<?php echo $hasil['Keterangan'] ?>">
+                                                                <label for="recipient-name" class="col-form-label">Prodi :</label>
+                                                                <input type="text" class="form-control" id="recipient-name" name="prodi" value="<?php echo $hasil['Prodi'] ?>">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="recipient-name" class="col-form-label">Alamat :</label>
+                                                                <input type="text" class="form-control" id="recipient-name" name="alamat" value="<?php echo $hasil['Alamat'] ?>">
                                                             </div>
                                                             <div class="modal-footer">
                                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
@@ -120,8 +123,8 @@ $select = mysqli_query($conn, "SELECT * FROM tb_barang");
                                                         <h5 class="modal-title" id="exampleModalLabel">Delete</h5>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                     </div>
-                                                    <form method="POST" action="proses/proses_hapus_data_barang.php">
-                                                        <input type="hidden" name="id" value="<?php echo $hasil['Kode_barang'] ?>">
+                                                    <form method="POST" action="proses/proses_hapus_data_dosen.php">
+                                                        <input type="hidden" name="nip" value="<?php echo $hasil['NIP'] ?>">
                                                         <div class="modal-body">
                                                             Yakin ingin menghapus <?php echo $hasil['Nama']; ?>
                                                         </div>
@@ -145,30 +148,38 @@ $select = mysqli_query($conn, "SELECT * FROM tb_barang");
                 <!-- Akhir Isi Konten -->
 
                 <!-- Modal Tambah-->
-                <div class="modal fade" id="tambahdatabarang" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="tambahdatadosen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Tambah Data Barang</h5>
+                                <h5 class="modal-title" id="exampleModalLabel">Tambah Data Dosen</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <form method="POST" action="proses/proses_tambah_data_barang.php">
+                            <form method="POST" action="proses/proses_tambah_data_dosen.php">
                                 <div class="modal-body">
                                     <div class="mb-3">
-                                        <label for="recipient-name" class="col-form-label">Kode Barang :</label>
-                                        <input type="number" class="form-control" id="recipient-name" name="kd_barang">
+                                        <label for="recipient-name" class="col-form-label">NIP :</label>
+                                        <input type="number" class="form-control" id="recipient-name" name="nip">
                                     </div>
                                     <div class="mb-3">
-                                        <label for="recipient-name" class="col-form-label">Nama Barang :</label>
-                                        <input type="text" class="form-control" id="recipient-name" name="nm_barang">
+                                        <label for="recipient-name" class="col-form-label">Nama :</label>
+                                        <input type="text" class="form-control" id="recipient-name" name="nm_dosen">
                                     </div>
                                     <div class="mb-3">
-                                        <label for="recipient-name" class="col-form-label">Keterangan :</label>
-                                        <input type="text" class="form-control" id="recipient-name" name="ket_barang">
+                                        <label for="recipient-name" class="col-form-label">Prodi :</label>
+                                        <input type="text" class="form-control" id="recipient-name" name="prodi">
                                     </div>
                                     <div class="mb-3">
-                                        <label for="recipient-name" class="col-form-label">Stok :</label>
-                                        <input type="number" class="form-control" id="recipient-name" name="stok">
+                                        <label for="recipient-name" class="col-form-label">Alamat :</label>
+                                        <input type="text" class="form-control" id="recipient-name" name="alamat">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Tanggal Lahir :</label>
+                                        <input type="date" class="form-control" id="recipient-name" name="tgl_lhr">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Tempat Lahir :</label>
+                                        <input type="textr" class="form-control" id="recipient-name" name="tmp_lhr">
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
@@ -182,15 +193,9 @@ $select = mysqli_query($conn, "SELECT * FROM tb_barang");
             </div>
         </div>
     </div>
-    <!-- Optional JavaScript; choose one of the two! -->
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
+
 </body>
 
 </html>

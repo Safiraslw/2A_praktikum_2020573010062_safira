@@ -75,7 +75,7 @@ $row = mysqli_fetch_array($hasil);
       </a>
     </li>
     <?php
-    if ($row["Level"] == 'Admin') {
+    if ($row["Level"] == 'Admin' || $row["Level"] == 'Mahasiswa') {
     ?>
       <li>
         <a href="dosen" class="nav-link link-dark <?php if ($_GET['s'] == 'dosen') echo 'active'; ?>">
@@ -105,11 +105,6 @@ $row = mysqli_fetch_array($hasil);
           Barang
         </a>
       </li>
-
-    <?php } ?>
-    <?php
-    if ($row["Level"] == 'Mahasiswa') {
-    ?>
       <li>
         <a href="peminjaman" class="nav-link link-dark <?php if ($_GET['s'] == 'peminjaman') echo 'active'; ?>">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi me-2" viewBox="0 0 16 16">
@@ -117,6 +112,24 @@ $row = mysqli_fetch_array($hasil);
             <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
           </svg>
           Peminjaman
+        </a>
+      </li>
+      <li>
+        <a href="datapinjam" class="nav-link link-dark <?php if ($_GET['s'] == 'datapinjam') echo 'active'; ?>">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi me-2" viewBox="0 0 16 16">
+            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+          </svg>
+          Data Peminjaman
+        </a>
+      </li>
+      <li>
+        <a href="riwayat" class="nav-link link-dark <?php if ($_GET['s'] == 'riwayat') echo 'active'; ?>">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi me-2" viewBox="0 0 16 16">
+            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+          </svg>
+          Riwayat Peminjaman
         </a>
       </li>
     <?php } ?>
