@@ -49,42 +49,94 @@
                     <div class="col-sm-6">
                         <div class="card" style="background-color: #336666;">
                             <h5 class="ms-2 mt-4 me-4 mb-lg-3" style="text-align:center;"><img src="images/tired.png" style="float: left; width: 5rem;" alt="">
-                            When you feel tired</h5>
+                                When you feel tired</h5>
+                            <?php
+                            if ($row["Level"] == 'admin') {
+                            ?>
+                                <div class="footer">
+                                    <a href="form_motivation.php" class="btn btn-outline-light float-end me-2 mb-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            <?php
+                            }
+                            ?>
                         </div>
                         <div class="row mt-lg-5">
                             <div class="">
-                            <div class="card" style="background-color: #336666;">
-                            <h5 class="ms-2 mt-4 me-4 mb-2" style="text-align:center;"><img src="images/lonely.png" style="float: left; width: 7rem;" alt="">
-                            When you feel sad</h5>
-                        </div>
+                                <div class="card" style="background-color: #336666;">
+                                    <h5 class="ms-2 mt-4 me-4 mb-2" style="text-align:center;"><img src="images/lonely.png" style="float: left; width: 7rem;" alt="">
+                                        When you feel sad</h5>
+                                    <?php
+                                    if ($row["Level"] == 'admin') {
+                                    ?>
+                                        <div class="footer">
+                                            <a href="form_motivation.php" class="btn btn-outline-light float-end me-2 mb-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    <?php
+                                    }
+                                    ?>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="card" style="background-color: #336666;">
-                            <h5 class="ms-2 mt-4 me-4" style="text-align:center;"><img src="images/scare.png" style="float: left; width: 5rem;" alt=""> 
-                            When you feel scare</h5>
+                            <h5 class="ms-2 mt-4 me-4" style="text-align:center;"><img src="images/scare.png" style="float: left; width: 5rem;" alt="">
+                                When you feel scare</h5>
+                            <?php
+                            if ($row["Level"] == 'admin') {
+                            ?>
+                                <div class="footer">
+                                    <a href="form_motivation.php" class="btn btn-outline-light float-end me-2 mb-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            <?php
+                            }
+                            ?>
                         </div>
                         <div class="row mt-lg-5">
                             <div class="">
-                            <div class="card" style="background-color: #336666;">
-                            <h5 class="ms-2 mt-4 me-4" style="text-align:center;"><img src="images/overthinking.png" style="float: left; width: 5rem;" alt="">
-                            When you feel overthinking</h5>
+                                <div class="card" style="background-color: #336666;">
+                                    <h5 class="ms-2 mt-4 me-4" style="text-align:center;"><img src="images/overthinking.png" style="float: left; width: 5rem;" alt="">
+                                        When you feel overthinking</h5>
+                                    <?php
+                                    if ($row["Level"] == 'admin') {
+                                    ?>
+                                        <div class="footer">
+                                            <a href="form_motivation.php" class="btn btn-outline-light float-end me-2 mb-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    <?php
+                                    }
+                                    ?>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Akhir Isi Konten -->
         </div>
-    </div>
-    <!-- Akhir Isi Konten -->
-    </div>
 
-    <!-- Page level plugins -->
-    <script src="JavaScript/Chart.min.js"></script>
+        <!-- Page level plugins -->
+        <script src="JavaScript/Chart.min.js"></script>
 
-    <!-- Page level custom scripts -->
-    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="JavaScript/chart-pie-demo.js"></script>
+        <!-- Page level custom scripts -->
+        <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="JavaScript/chart-pie-demo.js"></script>
 </body>
 
 </html>

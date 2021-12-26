@@ -1,3 +1,6 @@
+<?php
+require "proses/session.php"
+?>
 <!doctype html>
 <html lang="en">
 
@@ -10,7 +13,7 @@
     rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css" />
-    <title>Sistem Informasi Peminjaman Barang Jurusan TIK</title>
+    <title></title>
 </head>
 
 <body>

@@ -8,7 +8,7 @@
     </div>
     <div class="list-group list-group-flush">
         <?php
-        if ($row["Level"] == 'user') {
+        if ($row["level"] == 'user') {
         ?>
             <a href="dashboard.php" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill me-2" viewBox="0 0 16 16">
@@ -25,7 +25,7 @@
                 To Do
             </a>
             <?php
-            if ($row["Level"] == 'admin') {
+            if ($row["level"] == 'admin') {
             ?>
                 <a href="tips.php" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-dots me-2" viewBox="0 0 16 16">
