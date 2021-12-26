@@ -30,8 +30,8 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
                             <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="images/happy.png" alt="" width="32" height="32" class="rounded-circle me-2">
-                                <!-- <strong>Safira Salwa</strong> -->
+                                <img src="https://github.com/Safiraslw.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                                <strong>Safira Salwa</strong>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#">Profile</a></li>
@@ -49,47 +49,97 @@
                     <div class="col-6">
                         <div class="ms-4 card shadow" style="background-color: #336666;">
                             <div class="card-body">
-                                <form action="proses_tambah_todolist.php" method="POST">
-                                    <input type="hidden" name="id" value="<?php echo $sql['id'] ?>">
+                                <form action="#">
                                     <label for="Tanggal">Day</label>
-                                    <input type="date" id="Tanggal" name="tanggal">
-                                    <table class="table table-bordered mt-4">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col" class="text-center">check</th>
-                                                <th scope="col" class="text-center">Time</th>
-                                                <th scope="col" class="text-center">Plan</th>
-                                                <th scope="col" class="text-center">Type</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row"><input name="check" class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
-                                                <td>
-                                                <?php echo ['time'] . "<br>"; ?>
-                                                </td>
-                                                <td>
-                                                <?php echo ['plan'] . "<br>"; ?>
-                                                </td>
-                                                <td>
-                                                <?php echo ['type'] . "<br>"; ?>
-                                                    <select name="tipe" class="form-select form-select-sm" aria-label=".form-select-sm example">
-                                                        <option selected></option>
-                                                        <option value="1">Habit</option>
-                                                        <option value="2">To do</option>
-                                                    </select>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                    <input type="date" id="Tanggal" name="Tanggal">
                                 </form>
+                                <table class="table table-bordered mt-4">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="text-center">check</th>
+                                            <th scope="col" class="text-center">Time</th>
+                                            <th scope="col" class="text-center">Plan</th>
+                                            <th scope="col" class="text-center">Type</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                                            <td>
+                                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                            </td>
+                                            <td>
+                                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                                    <option selected></option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                                            <td>
+                                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                            </td>
+                                            <td>
+                                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                                    <option selected></option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                                            <td>
+                                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                            </td>
+                                            <td>
+                                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                                    <option selected></option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                                            <td>
+                                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                            </td>
+                                            <td>
+                                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                                    <option selected></option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                                 <button type="button" class="btn btn-outline-light">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
                                         <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
                                     </svg>
                                 </button>
                                 <div class="footer">
-                                    <button type="button" class="btn btn-danger float-end mt-lg-4" data-dismiss="modal">Done</button>
+                                    <button type="button" class="btn btn-danger float-end mt-lg-4" data-dismiss="modal">Close</button>
                                 </div>
                             </div>
                         </div>
@@ -129,7 +179,7 @@
     </div>
 
     <!-- Page level plugins -->
-    <script src="JavaScript/Chart.min.js"></script>
+    <script src="vendor/chart.js/Chart.min.js"></script>
 
     <!-- Page level custom scripts -->
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
