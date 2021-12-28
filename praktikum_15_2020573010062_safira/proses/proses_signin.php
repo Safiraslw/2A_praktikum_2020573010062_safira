@@ -13,10 +13,10 @@ session_start();
         if ((isset($row['Username']) && isset($row['Password']))
         && $row['Username'] == $username && $row['Password'] == $password) {
             $_SESSION ['Username']= $row['Username'];
-            echo "<script> window.location='../dashboard.php';</script>";
+            echo "<script> window.location='../index.php';</script>";
             // header("Location: ../home.php");
         } else {
-            echo "<script> window.location='../sign-in/index.php';</script>";
+            echo "<script> window.location='../sign-in/form_signin.php';</script>";
             // header("Location: ../sign-in/form_signin.php");
         }
     }

@@ -1,52 +1,34 @@
 <?php
-if (isset($_POST['peminjaman'])) {
+session_start();
+require "koneksi.php";
+$brg    = $_POST['brg'];
+$mk     = $_POST['mk'];
+if (empty($_POST['wkt_kembali'])) {
+    echo "<script>alert('Waktu pengembalian harus diisi')</script>";
+    echo "<script>window.location = '../peminjaman'</script>";
+} else {
+    $wkt_kembali = $_POST['wkt_kembali'];
+}
 
-    if ($_POST['Waktu_kembali'] != "") {
-        require "koneksi.php";
-        require "session.php";
-        $brg = $_POST['brg'];
-
-        // cek apakah barang apakah sudah di pinjam atau belum, status 2 menandakan barang tersebut sudah dipinjam
-        $select_id_barang = mysqli_query($conn, "SELECT * FROM tb_peminjaman WHERE Barang = '$brg' && (Status = '2')");
-        $hasil_barang = mysqli_fetch_array($select_id_barang);
-
-        if (isset($hasil_barang['Barang'])) {
-            echo '<script>alert("Peminjaman barang gagal, barang sudah di pinjam");</script>';
-            echo '<script>window.location="../peminjaman";</script>';
-        } else {
-            $mk = $_POST['mk'];
-            $username = $_SESSION['Username'];
-
-            //ambil id_user dari tabel tb_user
-            $select_id_user = mysqli_query($conn, "SELECT * FROM tb_user WHERE Username = '$username'");
-
-            if ($select_id_user) {
-                $hasil_id = mysqli_fetch_array($select_id_user);
-                $id = $hasil_id['id'];
-                $waktu_pengembalian = $_POST['Waktu_kembali'];
-
-                $pinjam = mysqli_query($conn, "INSERT INTO tb_peminjaman(Barang, User, Status, Waktu_kembali, Mata_kuliah) VALUES ('$brg', '$id', '1', '$waktu_pengembalian', '$mk')");
-
-                if ($pinjam) {
-                    echo '<script>alert("Peminjaman barang berhasil");</script>';
-                    echo '<script>window.location="../peminjaman";</script>';
-                } else {
-                    echo 1;
-                    echo '<script>alert("Peminjaman barang gagal, mohon kontak admin");</script>';
-                    echo $_POST['Waktu_kembali'];
-                    echo $waktu_pengembalian;
-                    // echo '<script>window.location="../peminjaman";</script>';
-                }
-            } else {
-                echo '<script>alert("Peminjaman barang gagal, mohon kontak admin");</script>';
-                echo '<script>window.location="../peminjaman";</script>';
-            }
-        }
+$select     = mysqli_query($conn, "SELECT id FROM tb_user WHERE Username='$_SESSION[Username]'");
+$hasilnya   = mysqli_fetch_array($select);
+if ($hasilnya) {
+    $select1     = mysqli_query($conn, "SELECT barang FROM tb_peminjaman WHERE Barang=$brg && (Status=1 || Status=2)");
+    $hasilnya1   = mysqli_fetch_array($select1);
+    if ($hasilnya1) {
+        echo "<script>alert('Peminjaman Gagal ditambahkan, barang telah dipinjam')</script>";
+        echo "<script>window.location = '../peminjaman'</script>";
     } else {
-        echo '<script>alert("Waktu Pengembalian harus diisi");</script>';
-        echo '<script>window.location="../peminjaman";</script>';
+        $input  = mysqli_query($conn, "INSERT INTO tb_peminjaman (Barang,User,Status,Mata_kuliah,Waktu_kembali) VALUES($brg,$hasilnya[id],1,'$mk','$wkt_kembali')");
+        if ($input) {
+            echo "<script>alert('Peminjaman berhasil ditambahkan')</script>";
+            echo "<script>window.location = '../peminjaman'</script>";
+        } else {
+            echo "<script>alert('Peminjaman gagal ditambahkan')</script>";
+            echo "<script>window.location = '../peminjaman'</script>";
+        }
     }
 } else {
-    echo '<script>alert("Peminjaman barang gagal, mohon kontak admin");</script>';
-    echo '<script>window.location="../peminjaman";</script>';
+    echo "<script>alert('Peminjaman gagal ditambahkan')</script>";
+    echo "<script>window.location = '../peminjaman'</script>";
 }

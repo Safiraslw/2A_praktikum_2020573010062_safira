@@ -1,7 +1,7 @@
 <?php
     session_start();
     if(!empty($_SESSION['Username'])){
-      echo "<script> window.location='../.php';</script>";
+      echo "<script> window.location='../home.php';</script>";
     }    
 ?>
 <!doctype html>

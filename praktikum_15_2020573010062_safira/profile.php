@@ -60,7 +60,7 @@ $data = mysqli_fetch_array($sql);
                                 <div class="mb-3">
                                     <label class="form-label">Nama</label>
                                     <input type="text" class="form-control" value="<?php 
-                                    echo $data['Nama']; ?>" disabled>
+                                    echo $data['Nama_Mhs']; ?>" disabled>
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label">Kelas</label>

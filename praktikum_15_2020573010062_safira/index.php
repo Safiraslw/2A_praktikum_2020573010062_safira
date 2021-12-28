@@ -17,6 +17,10 @@ if (empty ($_GET['s'])){
     require "form_change.php";
 }elseif ($_GET['s'] == 'dosen'){
     require "dosen.php";
+}elseif ($_GET['s'] == 'datapinjam'){
+    require "data_pinjam.php";
+}elseif ($_GET['s'] == 'riwayat'){
+    require "riwayat.php";
 }else {
     echo "<script> window.location='home';</script>";
 }
