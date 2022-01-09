@@ -44,10 +44,10 @@ LEFT JOIN tb_dosen dos ON mk.Dosen=dos.NIP");
                 <!-- Isi Konten -->
 
                 <div class="col-9 mt-3">
-                    <h4>Data Barang</h4>
+                    <h4>Data Peminjaman</h4>
                     <hr>
                     <div class="card mt-4">
-                        <h5 class="card-header" style="background-color:#ffc0cb;">Data Informasi Barang</h5>
+                        <h5 class="card-header" style="background-color:#ffc0cb;">Data Informasi Peminjaman</h5>
                         <div class="card-body">
                             <table class="table table-striped table-hover">
                                 <thead>
@@ -165,7 +165,7 @@ LEFT JOIN tb_dosen dos ON mk.Dosen=dos.NIP");
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLabel">Persetujuan Pinjaman Barang</h5>
+                                                        <h5 class="modal-title" id="exampleModalLabel">Persetujuan Pengembalian Barang</h5>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                     </div>
                                                     <form method="POST" action="proses/proses_setujui_kembali_peminjaman.php">

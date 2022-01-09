@@ -160,7 +160,7 @@ LEFT JOIN tb_dosen dos ON mk.Dosen=dos.NIP");
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLabel">Persetujuan Pinjaman Barang</h5>
+                                                        <h5 class="modal-title" id="exampleModalLabel">Persetujuan Pengembalian Barang</h5>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                     </div>
                                                     <form method="POST" action="proses/proses_kembalikan_peminjaman.php">
@@ -197,8 +197,8 @@ LEFT JOIN tb_dosen dos ON mk.Dosen=dos.NIP");
                                                         <h5 class="modal-title" id="exampleModalLabel">Delete</h5>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                     </div>
-                                                    <form method="POST" action="proses/proses_hapus_data_barang.php">
-                                                        <input type="hidden" name="id" value="<?php echo $hasil['Kode_barang'] ?>">
+                                                    <form method="POST" action="proses/proses_hapus_peminjaman.php">
+                                                        <input type="hidden" name="id" value="<?php echo $hasil['id_peminjaman'] ?>">
                                                         <div class="modal-body">
                                                             Yakin ingin menghapus <?php echo $hasil['Nama']; ?>
                                                         </div>

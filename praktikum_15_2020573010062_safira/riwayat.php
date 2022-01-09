@@ -42,10 +42,10 @@ WHERE Status=3 || Status=4");
                 <!-- Isi Konten -->
 
                 <div class="col-9 mt-3">
-                    <h4>Data Barang</h4>
+                    <h4>Riwayat Peminjaman</h4>
                     <hr>
                     <div class="card mt-4">
-                        <h5 class="card-header" style="background-color:#ffc0cb;">Data Informasi Barang</h5>
+                        <h5 class="card-header" style="background-color:#ffc0cb;">Data Informasi Riwayat Peminjaman</h5>
                         <div class="card-body">
                             <table class="table table-striped table-hover">
                                 <thead>

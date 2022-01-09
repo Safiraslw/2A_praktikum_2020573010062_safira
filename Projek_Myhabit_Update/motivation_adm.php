@@ -54,15 +54,11 @@ $data = mysqli_fetch_array($sql);
                 <div class="row mt-lg-5">
                     <div class="col-sm-6">
                         <div class="card" style="background-color: #336666;">
-                            <h3 class="ms-2 mt-4 me-4 mb-3" style="text-align:center;"><img src="images/tired.png" style="float: left; width: 6rem;" alt="">
-                                <?php echo $data['judul'] . "<br>" ?>
-                            </h3>
-                            <h5 class="ms-2 mt-4 me-4 mb-3 text-light" style="text-align:center;">
-                                <?php echo "' $data[content] '" . "<br>" ?>
-                                <?php echo "--"." ".$data['credit'] ?>
+                            <h5 class="ms-2 mt-4 me-4 mb-3" style="text-align:center;"><img src="images/tired.png" style="float: left; width: 6rem;" alt="">
+                                <?php echo "Give Them Your Quote!" ?>
                             </h5>
-                            <div class="footer">
-                                <a href="form_motivation.php" class="btn btn-outline-light float-end me-2 mb-2">
+                            <div class="footer mb-2">
+                                <a href="form_motivation.php" class="btn btn-outline-light float-end me-2 mb-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
                                         <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
                                     </svg>
@@ -72,8 +68,9 @@ $data = mysqli_fetch_array($sql);
                         <div class="row mt-lg-5">
                             <div class="">
                                 <div class="card" style="background-color: #336666;">
-                                    <h5 class="ms-2 mt-4 me-4 mb-3" style="text-align:center;"><img src="images/lonely.png" style="float: left; width: 7rem;" alt="">
-                                        <?php echo $data['judul'] ?></h5>
+                                    <h5 class="ms-2 mt-4 me-4 mb-3" style="text-align:center;"><img src="images/lonely.png" style="float: left; width: 8rem;" alt="">
+                                        <?php echo "Give Them Your Quote!" ?>
+                                    </h5>
                                     <div class="footer">
                                         <a href="form_motivation.php" class="btn btn-outline-light float-end me-2 mb-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
@@ -87,8 +84,9 @@ $data = mysqli_fetch_array($sql);
                     </div>
                     <div class="col-sm-6">
                         <div class="card" style="background-color: #336666;">
-                            <h5 class="ms-2 mt-4 me-4" style="text-align:center;"><img src="images/scare.png" style="float: left; width: 6rem;" alt="">
-                                <?php echo $data['judul'] ?></h5>
+                            <h5 class="ms-2 mt-4 me-4 mb-3" style="text-align:center;"><img src="images/scare.png" style="float: left; width: 6rem;" alt="">
+                                <?php echo "Give Them Your Quote!" ?>
+                            </h5>
                             <div class="footer">
                                 <a href="form_motivation.php" class="btn btn-outline-light float-end me-2 mb-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
@@ -100,8 +98,9 @@ $data = mysqli_fetch_array($sql);
                         <div class="row mt-lg-5">
                             <div class="">
                                 <div class="card" style="background-color: #336666;">
-                                    <h5 class="ms-2 mt-4 me-4" style="text-align:center;"><img src="images/overthinking.png" style="float: left; width: 5rem;" alt="">
-                                        <?php echo $data['judul'] ?></h5>
+                                    <h5 class="ms-2 mt-4 me-4 mb-3" style="text-align:center;"><img src="images/overthinking.png" style="float: left; width: 5rem;" alt="">
+                                        <?php echo "Give Them Your Quote!" ?>
+                                    </h5>
                                     <div class="footer">
                                         <a href="form_motivation.php" class="btn btn-outline-light float-end me-2 mb-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
