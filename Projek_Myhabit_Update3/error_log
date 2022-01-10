@@ -1,0 +1,126 @@
+[26-Dec-2021 09:11:21 UTC] PHP Notice:  Array to string conversion in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/to_do.php on line 69
+[26-Dec-2021 09:11:21 UTC] PHP Notice:  Array to string conversion in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/to_do.php on line 72
+[26-Dec-2021 09:11:21 UTC] PHP Notice:  Array to string conversion in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/to_do.php on line 75
+[26-Dec-2021 09:11:21 UTC] PHP Notice:  Undefined variable: sql in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/to_do.php on line 53
+[26-Dec-2021 09:11:30 UTC] PHP Notice:  Array to string conversion in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/to_do.php on line 69
+[26-Dec-2021 09:11:30 UTC] PHP Notice:  Array to string conversion in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/to_do.php on line 72
+[26-Dec-2021 09:11:30 UTC] PHP Notice:  Array to string conversion in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/to_do.php on line 75
+[26-Dec-2021 09:11:30 UTC] PHP Notice:  Undefined variable: sql in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/to_do.php on line 53
+[26-Dec-2021 09:11:38 UTC] PHP Notice:  Array to string conversion in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/to_do.php on line 69
+[26-Dec-2021 09:11:38 UTC] PHP Notice:  Array to string conversion in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/to_do.php on line 72
+[26-Dec-2021 09:11:38 UTC] PHP Notice:  Array to string conversion in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/to_do.php on line 75
+[26-Dec-2021 09:11:38 UTC] PHP Notice:  Undefined variable: sql in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/to_do.php on line 53
+[26-Dec-2021 10:18:27 UTC] PHP Notice:  Array to string conversion in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/to_do.php on line 69
+[26-Dec-2021 10:18:27 UTC] PHP Notice:  Array to string conversion in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/to_do.php on line 72
+[26-Dec-2021 10:18:27 UTC] PHP Notice:  Array to string conversion in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/to_do.php on line 75
+[26-Dec-2021 10:18:27 UTC] PHP Notice:  Undefined variable: sql in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/to_do.php on line 53
+[26-Dec-2021 10:40:28 UTC] PHP Notice:  Undefined variable: conn in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/sidebar.php on line 2
+[26-Dec-2021 10:40:28 UTC] PHP Notice:  Undefined variable: _SESSION in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/sidebar.php on line 2
+[26-Dec-2021 10:40:28 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/sidebar.php on line 2
+[26-Dec-2021 10:40:28 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/sidebar.php on line 3
+[26-Dec-2021 10:42:22 UTC] PHP Notice:  Undefined variable: conn in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/sidebar.php on line 2
+[26-Dec-2021 10:42:22 UTC] PHP Notice:  Undefined variable: _SESSION in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/sidebar.php on line 2
+[26-Dec-2021 10:42:22 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/sidebar.php on line 2
+[26-Dec-2021 10:42:22 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/sidebar.php on line 3
+[26-Dec-2021 10:42:22 UTC] PHP Notice:  Undefined variable: _SESSION in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/header.php on line 11
+[26-Dec-2021 10:42:52 UTC] PHP Notice:  Undefined variable: conn in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/sidebar.php on line 2
+[26-Dec-2021 10:42:52 UTC] PHP Notice:  Undefined variable: _SESSION in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/sidebar.php on line 2
+[26-Dec-2021 10:42:52 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/sidebar.php on line 2
+[26-Dec-2021 10:42:52 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/sidebar.php on line 3
+[26-Dec-2021 10:42:52 UTC] PHP Notice:  Undefined variable: _SESSION in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/header.php on line 11
+[26-Dec-2021 10:42:57 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 2
+[26-Dec-2021 10:47:58 UTC] PHP Notice:  Undefined variable: conn in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/sidebar.php on line 2
+[26-Dec-2021 10:47:58 UTC] PHP Notice:  Undefined variable: _SESSION in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/sidebar.php on line 2
+[26-Dec-2021 10:47:58 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/sidebar.php on line 2
+[26-Dec-2021 10:47:58 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/sidebar.php on line 3
+[26-Dec-2021 10:47:58 UTC] PHP Notice:  Undefined variable: _SESSION in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/header.php on line 11
+[26-Dec-2021 10:51:59 UTC] PHP Notice:  Undefined variable: conn in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/sidebar.php on line 2
+[26-Dec-2021 10:51:59 UTC] PHP Notice:  Undefined variable: _SESSION in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/sidebar.php on line 2
+[26-Dec-2021 10:51:59 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/sidebar.php on line 2
+[26-Dec-2021 10:51:59 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/sidebar.php on line 3
+[26-Dec-2021 10:51:59 UTC] PHP Notice:  Undefined variable: _SESSION in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/header.php on line 11
+[26-Dec-2021 10:53:06 UTC] PHP Notice:  Undefined variable: _SESSION in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/sidebar.php on line 2
+[26-Dec-2021 10:53:06 UTC] PHP Notice:  Undefined variable: _SESSION in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/header.php on line 11
+[26-Dec-2021 10:53:08 UTC] PHP Notice:  Undefined variable: _SESSION in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/sidebar.php on line 2
+[26-Dec-2021 10:53:08 UTC] PHP Notice:  Undefined variable: _SESSION in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/header.php on line 11
+[26-Dec-2021 10:57:04 UTC] PHP Notice:  Array to string conversion in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/to_do.php on line 69
+[26-Dec-2021 10:57:04 UTC] PHP Notice:  Array to string conversion in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/to_do.php on line 72
+[26-Dec-2021 10:57:04 UTC] PHP Notice:  Array to string conversion in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/to_do.php on line 75
+[26-Dec-2021 10:57:04 UTC] PHP Notice:  Undefined variable: conn in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/sidebar.php on line 2
+[26-Dec-2021 10:57:04 UTC] PHP Notice:  Undefined variable: _SESSION in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/sidebar.php on line 2
+[26-Dec-2021 10:57:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/sidebar.php on line 2
+[26-Dec-2021 10:57:04 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/sidebar.php on line 3
+[26-Dec-2021 10:57:04 UTC] PHP Notice:  Undefined variable: sql in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/to_do.php on line 53
+[26-Dec-2021 11:03:41 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 4
+[26-Dec-2021 11:03:41 UTC] PHP Warning:  require(sidebar_adm.php): failed to open stream: No such file or directory in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 25
+[26-Dec-2021 11:03:41 UTC] PHP Warning:  require(sidebar_adm.php): failed to open stream: No such file or directory in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 25
+[26-Dec-2021 11:03:41 UTC] PHP Fatal error:  require(): Failed opening required 'sidebar_adm.php' (include_path='.:/opt/alt/php70/usr/share/pear') in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 25
+[26-Dec-2021 11:04:42 UTC] PHP Warning:  require(sidebar_adm.php): failed to open stream: No such file or directory in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 25
+[26-Dec-2021 11:04:42 UTC] PHP Warning:  require(sidebar_adm.php): failed to open stream: No such file or directory in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 25
+[26-Dec-2021 11:04:42 UTC] PHP Fatal error:  require(): Failed opening required 'sidebar_adm.php' (include_path='.:/opt/alt/php70/usr/share/pear') in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 25
+[26-Dec-2021 11:04:56 UTC] PHP Notice:  Array to string conversion in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/to_do.php on line 72
+[26-Dec-2021 11:04:56 UTC] PHP Notice:  Array to string conversion in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/to_do.php on line 75
+[26-Dec-2021 11:04:56 UTC] PHP Notice:  Array to string conversion in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/to_do.php on line 78
+[26-Dec-2021 11:04:56 UTC] PHP Notice:  Undefined variable: sql in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/to_do.php on line 56
+[26-Dec-2021 11:05:35 UTC] PHP Warning:  require(sidebar_adm.php): failed to open stream: No such file or directory in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 25
+[26-Dec-2021 11:05:35 UTC] PHP Warning:  require(sidebar_adm.php): failed to open stream: No such file or directory in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 25
+[26-Dec-2021 11:05:35 UTC] PHP Fatal error:  require(): Failed opening required 'sidebar_adm.php' (include_path='.:/opt/alt/php70/usr/share/pear') in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 25
+[26-Dec-2021 11:06:27 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 38
+[26-Dec-2021 11:06:27 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 41
+[26-Dec-2021 11:06:27 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 42
+[26-Dec-2021 11:06:27 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 56
+[26-Dec-2021 11:06:27 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 71
+[26-Dec-2021 11:06:27 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 84
+[26-Dec-2021 11:18:53 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 38
+[26-Dec-2021 11:18:53 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 41
+[26-Dec-2021 11:18:53 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 42
+[26-Dec-2021 11:18:53 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 56
+[26-Dec-2021 11:18:53 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 71
+[26-Dec-2021 11:18:53 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 84
+[26-Dec-2021 11:19:12 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 38
+[26-Dec-2021 11:19:12 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 41
+[26-Dec-2021 11:19:12 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 42
+[26-Dec-2021 11:19:12 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 56
+[26-Dec-2021 11:19:12 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 71
+[26-Dec-2021 11:19:12 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 84
+[26-Dec-2021 11:21:17 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 38
+[26-Dec-2021 11:21:17 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 41
+[26-Dec-2021 11:21:17 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 42
+[26-Dec-2021 11:21:17 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 56
+[26-Dec-2021 11:21:17 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 71
+[26-Dec-2021 11:21:17 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 84
+[26-Dec-2021 11:21:29 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 38
+[26-Dec-2021 11:21:29 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 41
+[26-Dec-2021 11:21:29 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 42
+[26-Dec-2021 11:21:29 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 56
+[26-Dec-2021 11:21:29 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 71
+[26-Dec-2021 11:21:29 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 84
+[26-Dec-2021 11:21:40 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 38
+[26-Dec-2021 11:21:40 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 41
+[26-Dec-2021 11:21:40 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 42
+[26-Dec-2021 11:21:40 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 56
+[26-Dec-2021 11:21:40 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 71
+[26-Dec-2021 11:21:40 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 84
+[26-Dec-2021 11:22:15 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 38
+[26-Dec-2021 11:22:15 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 41
+[26-Dec-2021 11:22:15 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 42
+[26-Dec-2021 11:22:15 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 56
+[26-Dec-2021 11:22:15 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 71
+[26-Dec-2021 11:22:15 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 84
+[26-Dec-2021 11:22:20 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 38
+[26-Dec-2021 11:22:20 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 41
+[26-Dec-2021 11:22:20 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 42
+[26-Dec-2021 11:22:20 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 56
+[26-Dec-2021 11:22:20 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 71
+[26-Dec-2021 11:22:20 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 84
+[26-Dec-2021 11:22:43 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 38
+[26-Dec-2021 11:22:43 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 41
+[26-Dec-2021 11:22:43 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 42
+[26-Dec-2021 11:22:43 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 56
+[26-Dec-2021 11:22:43 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 71
+[26-Dec-2021 11:22:43 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 84
+[26-Dec-2021 11:28:58 UTC] PHP Notice:  Undefined variable: data in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/motivation_adm.php on line 55
+[07-Jan-2022 07:27:27 UTC] PHP Notice:  Undefined index: username in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/sidebar.php on line 2
+[07-Jan-2022 07:27:27 UTC] PHP Notice:  Undefined index: username in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update/header.php on line 11
+[09-Jan-2022 08:17:51 UTC] PHP Notice:  Undefined variable: sql in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update2/to_do.php on line 37
+[09-Jan-2022 08:17:55 UTC] PHP Notice:  Undefined variable: sql in /home/tiacom/nct.ti1a20.com/Projek_Myhabit_Update2/to_do.php on line 37
